@@ -121,7 +121,7 @@ function showFinish(message) {
 
 function startTimer() {
     var timerDate = new Date();
-    var minutesDuration = 3;
+    var minutesDuration = 1;
     timerDate.setMinutes(timerDate.getMinutes() + minutesDuration);
     $("#timer").countdown({until: timerDate, format: 'MS', layout: '{mnn}{sep}{snn}', onExpiry: finish});
 }
